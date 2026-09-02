@@ -98,6 +98,10 @@ docker run -d -p 8000:8000 --name buffturf_ml buffturf-ml
 
 ---
 
-## 📄 License
+## 📄 Copyright & Proprietary Rights
 
-Distributed under the **MIT License**.
+**Copyright © 2026 Jay Shinde. All Rights Reserved.**
+
+This machine learning service, models, algorithms, and training pipelines are the exclusive intellectual property of **Jay Shinde**.
+* **Viewing & Evaluation:** You are granted permission to view and examine this repository for portfolio review, recruitment, and technical evaluation purposes.
+* **Restrictions:** Unauthorized copying, reproduction, modification, redistribution, sublicensing, reverse engineering, or commercial use of any portion of this codebase without prior written permission from the copyright owner is strictly prohibited.
