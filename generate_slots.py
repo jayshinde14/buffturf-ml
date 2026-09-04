@@ -1,8 +1,9 @@
 import datetime
 from sqlalchemy import create_engine, text
 
-print("Connecting to DB...")
-engine = create_engine('mysql+pymysql://root:hpvictus@localhost:3306/buffturf_db')
+import os
+db_url = os.getenv("DB_URL", "mysql+pymysql://root@localhost:3306/buffturf_db")
+engine = create_engine(db_url)
 
 today = datetime.date.today()
 tomorrow = today + datetime.timedelta(days=1)

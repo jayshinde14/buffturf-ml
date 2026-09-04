@@ -3,10 +3,11 @@ from sklearn.neighbors import NearestNeighbors
 import joblib
 from sqlalchemy import create_engine
 
+import os
 # 1. Connect to MySQL Database directly
 print("Connecting to the database...")
-# Using the credentials from application.properties
-engine = create_engine("mysql+pymysql://root:hpvictus@localhost:3306/buffturf_db")
+db_url = os.getenv("DB_URL", "mysql+pymysql://root@localhost:3306/buffturf_db")
+engine = create_engine(db_url)
 
 # 2. Fetch booking data using a SQL query
 # We need users, turfs, and slots they booked. We only want CONFIRMED or COMPLETED bookings.
